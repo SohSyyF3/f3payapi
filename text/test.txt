@@ -1,0 +1,8 @@
+    1  su
+    2  su
+    3  curl -H "Content-Type: application/json" -X POST -d '{"contract_reference":"green","exchange_rate":"3","original_amount":"tesla","original_currency": "USD"}' http://127.0.0.1:8080/fx
+    4  curl -H "Content-Type: application/json" -X POST -d '{"contract_reference":"green","exchange_rate":"3","original_amount":"tesla","currency_code": "USD"}' http://127.0.0.1:8080/fx
+    5  curl -H "Content-Type: application/json" -X POST -d '{"contract_reference":"green","exchange_rate":"3","original_amount":"1","currency_code": "USD"}' http://127.0.0.1:8080/fx
+    6  curl -H "Content-Type: application/json" -X POST -d '{"contract_reference":"green","exchange_rate":"3","original_amount":"1","currency_code": "USkD"}' http://127.0.0.1:8080/fx
+    7  curl -H "Content-Type: application/json" -X POST -d '{"contract_reference":"green","exchange_rate":"3","original_amount":"1","currency_code": "GBP"}' http://127.0.0.1:8080/fx
+    8  history > test.txt
